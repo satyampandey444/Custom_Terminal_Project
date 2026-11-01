@@ -10,14 +10,12 @@ The project focuses on operating-system concepts such as process creation, inter
 
 ## Screenshots
 
+## Terminal Interface & Thread Mode
 
-### Terminal Interface
-
-![Terminator Main Interface](screenshots/terminator-main.png)
-
-### Thread Mode
-
-![Terminator Thread Mode](screenshots/thread-mode.png)
+<p align="center">
+  <img src="./screenshots/terminator-main.png" alt="Terminal Interface" width="45%" />
+  <img src="./thread-mode.png" alt="thread mode" width="45%" />
+</p>
 
 ### Process Mode
 
