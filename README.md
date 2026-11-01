@@ -10,7 +10,6 @@ The project focuses on operating-system concepts such as process creation, inter
 
 ## Screenshots
 
-<!-- Add your application screenshots to the screenshots/ directory. -->
 
 ### Terminal Interface
 
@@ -28,9 +27,6 @@ The project focuses on operating-system concepts such as process creation, inter
 
 ![Terminator MultiWatch](screenshots/multiwatch.png)
 
-### Text Selection and Clipboard
-
-![Terminator Clipboard and Selection](screenshots/clipboard-selection.png)
 
 ---
 
