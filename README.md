@@ -14,17 +14,15 @@ The project focuses on operating-system concepts such as process creation, inter
 
 <p align="center">
   <img src="./screenshots/terminator-main.png" alt="Terminal Interface" width="45%" />
-  <img src="./thread-mode.png" alt="thread mode" width="45%" />
+  <img src="./screenshots/thread-mode.png" alt="thread mode" width="45%" />
 </p>
 
-### Process Mode
+## Process Mode & MultiWatch
 
-![Terminator Process Mode](screenshots/process-mode.png)
-
-### MultiWatch
-
-![Terminator MultiWatch](screenshots/multiwatch.png)
-
+<p align="center">
+  <img src="./screenshots/process-mode.png" alt="process-mode" width="45%" />
+  <img src="./screenshots/multiwatch.png" alt="multiwatch" width="45%" />
+</p>
 
 ---
 
