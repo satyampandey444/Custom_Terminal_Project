@@ -429,14 +429,10 @@ Potential areas for future development include:
 
 ---
 
-## Author
+## Author 🧑‍🎓
 
-**Developed as an academic systems-programming project.**
+**Developed as an systems-programming project.**
 
 The project explores terminal emulation, custom shell implementation, process management, multithreading and inter-process communication using C and Linux system APIs.
 
 ---
-
-## License
-
-Add a license here if you intend to distribute the project under a particular open-source license. Otherwise, refer to the applicable academic and institutional requirements.
