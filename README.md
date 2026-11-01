@@ -298,7 +298,7 @@ sudo apt install \
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/terminator.git
+git clone https://github.com/satyampandey444/Custom_Terminal_Project
 ```
 
 Navigate to the project directory:
