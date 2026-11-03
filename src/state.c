@@ -1,0 +1,63 @@
+#include "terminator_internal.h"
+
+/* Single definitions of shared application state. */
+Display *display = NULL;
+Window window = 0;
+GC gc = 0;
+XFontStruct *font = NULL;
+int window_width = WIDTH;
+int window_height = HEIGHT;
+
+char input[INPUT_CAPACITY] = {0};
+size_t input_len = 0;
+size_t input_cursor = 0;
+char *history_entries[MAX_HISTORY] = {0};
+int history_count = 0;
+int history_start = 0;
+char history_path[PATH_MAX] = {0};
+int history_navigation = -1;
+char history_saved_input[INPUT_CAPACITY] = {0};
+pthread_mutex_t history_mutex = PTHREAD_MUTEX_INITIALIZER;
+int scroll_offset = 0;
+int search_mode = 0;
+char history_search_saved_input[INPUT_CAPACITY] = {0};
+char history_search_results[MAX_SEARCH_RESULTS][INPUT_CAPACITY] = {{0}};
+int history_search_count = 0;
+int history_search_index = 0;
+char completion_choices[MAX_COMPLETIONS][INPUT_CAPACITY] = {{0}};
+int completion_choice_count = 0;
+int completion_selection_mode = 0;
+char completion_choice_input[16] = {0};
+size_t completion_choice_len = 0;
+size_t completion_replace_start = 0;
+size_t completion_replace_end = 0;
+char output[MAX_LINES][MAX_LINE_LENGTH] = {{0}};
+int line_count = 1;
+int running = 1;
+char pending_command[MAX_COMMAND_SIZE] = {0};
+size_t pending_command_len = 0;
+int continuation_mode = 0;
+__thread int last_exit_status = 0;
+TabState tab_states[MAX_TABS] = {0};
+int tab_count = 1;
+int active_tab = 0;
+int tab_slots[MAX_TABS] = {0};
+int slot_used[MAX_TABS] = {1};
+pthread_mutex_t tab_data_mutex = PTHREAD_MUTEX_INITIALIZER;
+__thread int worker_context_slot = -1;
+int use_process_mode = 0;
+int process_child_mode = 0;
+int process_output_fd = -1;
+SharedHistory *process_shared_history = NULL;
+ProcessTab process_tabs[MAX_TABS] = {0};
+TabWorker tab_workers[MAX_TABS] = {0};
+int tab_hit_left[MAX_TABS + 1] = {0};
+int tab_hit_right[MAX_TABS + 1] = {0};
+int plus_hit_left = -1;
+int plus_hit_right = -1;
+int tab_scroll_offset = 0;
+Job jobs[MAX_JOBS] = {0};
+int next_job_id = 1;
+int requested_background = 0;
+char current_job_command[INPUT_CAPACITY] = {0};
+
